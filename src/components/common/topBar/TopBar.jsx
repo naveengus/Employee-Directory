@@ -6,7 +6,7 @@ function TopBar({ onSearch, onFilter }) {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
   const [query, setQuery] = useState("");
-  s;
+
   const [filterDept, setFilterDept] = useState("");
   const [filterRole, setFilterRole] = useState("");
 
