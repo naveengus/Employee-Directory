@@ -1,6 +1,7 @@
 import React from "react";
 import EmployeCard from "./EmployeCard";
 import { Button, Form } from "react-bootstrap";
+import Footer from "./Footer";
 
 function Home({
   employees,
@@ -20,7 +21,7 @@ function Home({
   };
 
   return (
-    <div className="p-3">
+    <div className="p-3 vh-100">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <Form.Select
           style={{ width: "150px" }}
@@ -62,6 +63,7 @@ function Home({
           <EmployeCard key={emp.id} data={emp} onDelete={onDelete} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

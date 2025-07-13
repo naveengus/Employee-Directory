@@ -76,7 +76,6 @@ function TopBar({ onSearch, onFilter }) {
                   <option value="Backend">Finance</option>
                 </Form.Select>
               </Form.Group>
-
               <Form.Group className="mb-3" controlId="filterRole">
                 <Form.Label>Role</Form.Label>
                 <Form.Select
@@ -91,7 +90,6 @@ function TopBar({ onSearch, onFilter }) {
                   <option value="Manager">Manager</option>
                 </Form.Select>
               </Form.Group>
-
               <Button
                 variant="primary"
                 onClick={() => {
@@ -101,6 +99,15 @@ function TopBar({ onSearch, onFilter }) {
               >
                 Apply Filters
               </Button>
+              <Button
+                type="button"
+                className="back"
+                placement="end"
+                variant="secondary"
+                onClick={() => navigate("/")}
+              >
+                clear
+              </Button>{" "}
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
@@ -109,6 +116,18 @@ function TopBar({ onSearch, onFilter }) {
         <Button variant="success" onClick={() => navigate("/Add-Employee")}>
           Add Employee
         </Button>
+        <Button
+          type="button"
+          className="back"
+          placement="end"
+          variant="secondary"
+          onClick={() => {
+            navigate("/");
+            setTimeout(() => window.location.reload(), 100);
+          }}
+        >
+          Back
+        </Button>{" "}
       </div>
     </div>
   );

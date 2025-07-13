@@ -27,6 +27,11 @@
 }
 .addSec {
   padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.back {
+  margin-left: 10px;
 }
 .card {
   width: 350px;
@@ -46,7 +51,7 @@
   padding: 30px;
   margin: 20px;
   border-radius: 15px;
-  justify-content: center;
+  align-items: center;
 }
 .side-nav {
   background-color: rgb(16, 32, 51);
@@ -92,11 +97,16 @@
   text-decoration: none;
   color: white;
 }
-.officon {
-  margin-right: 15px;
-}
+
 .offNav .off-link:hover {
   background-color: rgb(135, 136, 138, 0.1);
+}
+
+.footer {
+  padding: 20px;
+  height: 100px;
+  background-color: black;
+  color: aliceblue;
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,6 +125,9 @@
     font-size: small;
   }
 
+  .Form {
+    width: auto;
+  }
   .employeeCard {
     display: grid;
     grid-template-columns: 1fr;

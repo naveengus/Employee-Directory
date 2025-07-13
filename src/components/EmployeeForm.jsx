@@ -61,7 +61,7 @@ function EmployeeForm() {
   };
 
   return (
-    <div className="Form">
+    <div className="Form align-items-center ">
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="6" controlId="firstName">
