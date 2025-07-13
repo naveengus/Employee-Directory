@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
 function EmployeeForm() {
@@ -12,6 +12,7 @@ function EmployeeForm() {
     role: "",
   });
   const { id } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -28,7 +29,7 @@ function EmployeeForm() {
         setFormData(employeeToEdit);
       }
     }
-  }, [id]);
+  }, [id, location]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -55,6 +56,7 @@ function EmployeeForm() {
       }
 
       navigate("/");
+      window.location.reload();
     }
 
     setValidated(true);
@@ -130,9 +132,7 @@ function EmployeeForm() {
             </Form.Select>
           </Form.Group>
         </Row>
-        <Button type="button" variant="secondary" onClick={() => navigate("/")}>
-          Cancel
-        </Button>{" "}
+
         <Button type="submit">Submit</Button>
       </Form>
     </div>
