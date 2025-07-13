@@ -1,0 +1,119 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.topbar-container {
+  /* padding: 10px; */
+  background-color: black;
+  color: aliceblue;
+  /* height: 100px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr;
+  align-items: center; */
+  /* justify-content: center; */
+}
+
+.search {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+.addSec {
+  padding: 10px;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+.employeeCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Form {
+  width: 500px;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  justify-content: center;
+}
+.side-nav {
+  background-color: rgb(16, 32, 51);
+  color: white;
+}
+.custum-navbar .navbar-brand {
+  color: rgba(239, 238, 245) !important;
+  text-shadow: 2px 2px 4px #ff0000;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 70%;
+  border-bottom: 3px solid rgba(241, 241, 245, 0.3);
+}
+.offcanvas-body {
+  background-color: rgb(16, 32, 51);
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* White icon */
+}
+
+.custom-offcanvas-size .btn-close {
+  filter: invert(1);
+}
+
+.custom-offcanvas-size .btn-close:focus {
+  box-shadow: none;
+}
+.nav-item {
+  margin-left: -100px;
+}
+.nav-item .nav-link {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.sideprofile {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background-color: rgb(211, 208, 208, 0.7);
+}
+.offNav .off-link {
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+}
+.officon {
+  margin-right: 15px;
+}
+.offNav .off-link:hover {
+  background-color: rgb(135, 136, 138, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: 2fr;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .topSearch {
+    width: 200px;
+    height: 10px;
+  }
+  .search {
+    width: 200px;
+    height: 20px;
+  }
+  .employeeCard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
