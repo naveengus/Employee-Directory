@@ -36,6 +36,7 @@ This is a **frontend-only project**, with no backend integration. It uses:
 
 ## 📁 Project Structure
 
+```
 src/
 │
 ├── components/
@@ -49,3 +50,9 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+
+```
+
+# website
+
+- [preview](https://employees-directoryy.netlify.app/)
