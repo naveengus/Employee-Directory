@@ -1,8 +1,51 @@
-# React + Vite
+# Employee Directory React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly **Employee Directory** application built using **React**.
 
-Currently, two official plugins are available:
+This is a **frontend-only project**, with no backend integration. It uses:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `mockapiData.js` as initial dummy employee data
+- `localStorage` to simulate data persistence in the browser
+
+**Note:** Since there is no real backend or database connection, changes (add/edit/delete) are only stored **temporarily** in the browser's local storage. If you clear the cache, reload on another device, or deploy without persistent state, **the data will reset.**
+
+---
+
+## 🚀 Features
+
+- ✅ View employee cards with name, email, department, and role
+- 🔍 Search by first name, last name, or email
+- 🎯 Filter employees by department and role
+- ➕ Add new employees
+- 📝 Edit existing employee data
+- 🗑️ Delete employees
+- 📄 Pagination (10/25/50/100 items per page)
+- 💾 Data persistence using localStorage
+- 🌐 Deployed on Netlify
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Vite)
+- React Router DOM
+- Bootstrap / React-Bootstrap
+- LocalStorage
+
+---
+
+## 📁 Project Structure
+
+src/
+│
+├── components/
+│ ├── common/
+│ │ └── topBar/
+│ │ └── TopBar.jsx
+│ ├── Home.jsx
+│ ├── EmployeCard.jsx
+│ ├── EmployeeForm.jsx
+│ └── mockapiData.js
+│
+├── App.jsx
+└── main.jsx

@@ -29,9 +29,9 @@ function TopBar({ onSearch, onFilter }) {
   return (
     <div>
       <div className="topbar-container d-flex justify-content-between align-items-center p-3 ">
-        <h2 className="mb-0">Employee Directory</h2>
+        <h2 className="mb-0 topHead">Employee Directory</h2>
 
-        <div className="d-flex align-items-center gap-3 topSearch">
+        <div className="d-flex gap-3 topSearch">
           <input
             type="search"
             placeholder="Search by name or email"
@@ -42,11 +42,11 @@ function TopBar({ onSearch, onFilter }) {
           />
         </div>
 
-        <div className="d-flex gap-2 align-items-center">
+        <div className="d-flex gap-2 align-items-center ">
           <Button
             variant="outline-secondary"
             onClick={handleShow}
-            className="me-2"
+            className=" filter "
           >
             Filter
           </Button>

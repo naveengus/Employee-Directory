@@ -13,7 +13,13 @@
   align-items: center; */
   /* justify-content: center; */
 }
-
+.search {
+  font-size: xx-small;
+  align-items: center;
+}
+.filter {
+  /* font-size: medium; */
+}
 .search {
   width: 250px;
   height: 30px;
@@ -59,10 +65,6 @@
   color: white;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; /* White icon */
-}
-
 .custom-offcanvas-size .btn-close {
   filter: invert(1);
 }
@@ -99,19 +101,20 @@
 
 @media only screen and (max-width: 600px) {
   .topbar {
-    display: grid;
-    grid-template-columns: 2fr;
     align-items: center;
     /* justify-content: center; */
   }
+  .topHead {
+    font-size: large;
+  }
   .topSearch {
     width: 200px;
-    height: 10px;
+    height: 25px;
   }
-  .search {
-    width: 200px;
-    height: 20px;
+  .filter {
+    font-size: small;
   }
+
   .employeeCard {
     display: grid;
     grid-template-columns: 1fr;
