@@ -58,7 +58,7 @@ function Home({
         </div>
       </div>
 
-      <div className="employeeCard">
+      <div className="employeeCard mb-4">
         {employees.map((emp) => (
           <EmployeCard key={emp.id} data={emp} onDelete={onDelete} />
         ))}
